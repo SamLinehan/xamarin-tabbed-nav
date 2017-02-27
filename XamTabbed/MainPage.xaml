@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	xmlns:local="clr-namespace:XamTabbed;assembly=XamTabbed"
+	x:Class="XamTabbed.MainPage">
+	<local:TodayPage />
+	<NavigationPage Title="Schedule" Icon="calendar.png">
+		<x:Arguments>
+			<local:SchedulePage />
+		</x:Arguments>
+	</NavigationPage>
+	<local:SettingsPage />
+</TabbedPage>
